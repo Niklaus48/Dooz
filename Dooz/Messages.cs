@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Dooz
 {
-    internal class Program
+    [System.Serializable]
+    public class MessageBase
     {
-        static void Main(string[] args)
-        {
-            MainMenu.instance.StartMenu(); 
-        }
+        public string action {  get; set; }
+        public string data { get; set; }
     }
+
 }
